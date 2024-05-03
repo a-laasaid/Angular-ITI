@@ -1,0 +1,19 @@
+<hr/>
+<div class="card">
+    <img [src]="product.image" class="card-img-top" alt="...">  
+    <div class="card-body">
+        <h5 class="card-title">{{product.name}}</h5>
+        <p class="card-text">{{product.detalis}}</p>
+        <p class="card-text">{{product.price}} $</p>
+        <p class="fs-5 fw-bold mb-0"  
+        [ngClass]="{'custom-dark-text': product.quantity !== 0, 'custom-danger-text': product.quantity === 0}">
+        </p>
+        <!-- Include the button inside the same conditional block and disable it when the product is out of stock -->
+        <ng-container *ngIf="product.quantity !== 0; else outOfStock">
+            <a href="#" class="custom-danger-text" class="btn btn-primary">Book now</a>
+        </ng-container>
+        <ng-template #outOfStock>
+            <a href="#" class="custom-danger-text" class="btn btn-primary" disabled>Not available right now.</a>
+        </ng-template>
+    </div>
+</div>

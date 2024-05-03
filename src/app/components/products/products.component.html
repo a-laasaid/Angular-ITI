@@ -1,0 +1,15 @@
+<div class="bg-dark p-5 text-light">
+<h1 class="text-center text-light">Select the view that suits you best.</h1></div>
+<div class="container">
+    <div class="row">
+
+    
+    <div class="col-lg-3 product-card" *ngFor="let product of products" >
+       <app-cards [product]="product" class="col-md-6 col-lg-4 col-xl-3" ></app-cards>
+       <!-- <app-cards class="col-sm-3"></app-cards>
+       <app-cards class="col-sm-3"></app-cards>
+       <app-cards class="col-sm-3"></app-cards> -->
+       
+    </div>
+</div>
+</div>

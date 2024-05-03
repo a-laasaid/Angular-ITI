@@ -1,0 +1,16 @@
+<div class="bg-light p-5 text-center text-danger">
+    <h2>Product Details</h2>
+    <div class="container">
+      <p class="mt-2 lead fs-3">Product Name : {{product?.Name}} </p>
+      <p class="mt-2 lead fs-4">Product Price : {{product?.Price}} </p>
+      <p class="mt-2 lead fs-5">Product Quantity : {{product?.quantity}} </p>
+      <div>
+        <i class="text-warning bi bi-star-fill"></i>
+        <i class="text-warning bi bi-star-fill"></i>
+        <i class="text-warning bi bi-star-fill"> </i>
+        <i class="text-warning bi bi-star-fill"></i>
+        
+        <button (click)="back()" class="btn btn-success d-block ">Back</button>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,52 @@
+.card {
+    width: 400px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  .card-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Optional: Style the selected option differently */
+  .form-control option:checked {
+    background-color: #f0f0f0;
+  }
+  
+  /* Optional: Style the selected option text color */
+  .form-control option:checked {
+    color: #333;
+  }
+  
+  /* Optional: Add some margin between the selected option and other options */
+  .form-control option:not(:checked) {
+    margin-top: 5px;
+  }
+  
+  /* Optional: Style for objTrack display */
+  #objTrackDisplay {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  
